@@ -93,18 +93,39 @@ body {
 // }
 
 
-// Banner 
+// Banner Content
 
-.banner { 
-	height: 100vh; 
-	width: 100%; 
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
-	url("../../images/home-hero.jpg") no-repeat;
-	background-size: cover;
-	padding-top: 1em;
+.site-banner {
+position: absolute; 
+top: 0;
+background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
+			url("../../images/home-hero.jpg");
+background-size: cover;
+height: 100vh;
+width: 100%; 
+text-align: center;
+} 
+
+.circle-logo {
+	position: absolute;
+	transform:translateX(-50%);
+	left: 50%;
+	top: 35%;
+	height: 275px; 
+	width: 275px;
+	z-index: 2;
 }
-		
 
+
+
+.about-banner {
+	display: block; 
+	position: absolute; 
+	top: 0;
+	background-image: url("/images/about-hero.jpg");
+	background-size: cover;
+	height: 100vh;	
+}
 
 // FOOTER 
 

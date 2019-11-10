@@ -16,18 +16,15 @@
 <!--  Navigation  -->
 
 <header id="site-header" class="site-header" role="navigation">	
+	
 	<embed src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" class="header-logo"> 
 	<nav id="primary_menu" class="menu"" role="navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 	</nav> 
 
-<!-- Accessibility  -->
-
- 	<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>	
-	<div class="site-branding">
-		<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-	</div> 				
 </header>
+		
+	</div> 				
 				
-<!-- <div id="content" class="site-content"> -->
+<div id="content" class="site-content">
+

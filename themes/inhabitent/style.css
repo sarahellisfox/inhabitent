@@ -342,18 +342,22 @@ h3 {
 --------------------------------------------------------------*/
 /* Buttons */
 .site-header {
+  height: 50px;
   width: 100%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
-  .site-header .header-logo {
-    width: 50px;
-    height: 33px;
-    padding-top: 1em; }
+  position: absolute;
+  top: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-logo {
+  width: 50px;
+  height: auto; }
 
 .menu ul {
   list-style: none;
@@ -461,13 +465,33 @@ body {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-.banner {
+.site-banner {
+  position: absolute;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg");
+  background-size: cover;
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg") no-repeat;
+  text-align: center; }
+
+.circle-logo {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 35%;
+  height: 275px;
+  width: 275px;
+  z-index: 2; }
+
+.about-banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  background-image: url("/images/about-hero.jpg");
   background-size: cover;
-  padding-top: 1em; }
+  height: 100vh; }
 
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png"); }
