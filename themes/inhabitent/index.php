@@ -1,18 +1,13 @@
-<?php
-/**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
+<?php get_header(); ?>
 
-get_header(); ?>
 
-	<div id="primary" class="content-area">
+
+	<!-- <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
+			<?php if ( is_front_page() && is_home() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
@@ -33,8 +28,18 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
+		
+		
+		
+		<div class="banner-logo-wrapper">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo">
+		</div>
+
+
+		</main>
+		
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar(); ?> -->
+
 <?php get_footer(); ?>

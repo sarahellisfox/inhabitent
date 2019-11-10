@@ -22,7 +22,7 @@
 			</div> 
 
 			<div class="footer-logo">
-				<embed src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg">
+				<embed src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg">
 			</div> 
 			
 			<div class="footer-copyright">
@@ -32,7 +32,7 @@
 
 	</footer>
 
-		</div><!-- #page -->
+		</div><!-- site-content -->
 
 	</body>
 </html>

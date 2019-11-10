@@ -64,9 +64,49 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+// HEADER 
+
 body {
-background-color: pink;
+	width: 100%; 
+	height: auto;
 }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/* Links */
+
+// HEADER 
+
+
+
+	// .banner-logo-wrapper {
+	// 	position: absolute;
+	// 	top: 0; 
+	// 	left: 0;
+	// 	width: 275px; 
+	// 	height: 275px;
+	//   }
+
+	// }
+// }
+
+
+// Banner 
+
+.banner { 
+	height: 100vh; 
+	width: 100%; 
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
+	url("../../images/home-hero.jpg") no-repeat;
+	background-size: cover;
+	padding-top: 1em;
+}
+		
+
+
+// FOOTER 
 
 .site-footer {
 background-image: url("../../images/dark-wood@2x.png");
@@ -94,7 +134,7 @@ background-image: url("../../images/dark-wood@2x.png");
 			padding-top: 1.5em;
 
 			embed {
-				width: 275px;
+				width: 150x;
 			}
 		}
 
