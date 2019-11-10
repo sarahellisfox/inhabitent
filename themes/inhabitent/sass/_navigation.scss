@@ -2,7 +2,7 @@
 	height: 50px; 
 	width: 100%; 
 	display: flex;
-	position: absolute; 
+		
 	top: 0;
 	justify-content: space-around;
 	align-items: center;
@@ -15,7 +15,9 @@
 }
 
 .menu {
-	
+	display: flex; 
+	flex-wrap: nowrap;
+
 	ul {
 		list-style: none;
 		text-align: left;
@@ -32,4 +34,23 @@
 			}
 			
 		}		
+}
+
+.fa-search {
+	color: white;
+	padding-top: 1.25em;
+	padding-left: 0.5em;
+
+	::before {
+		display: none;
+	}
+}
+
+.screen-reader {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
 }

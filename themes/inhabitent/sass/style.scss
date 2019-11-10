@@ -75,6 +75,7 @@ body {
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
 // HEADER 
@@ -96,14 +97,15 @@ body {
 // Banner Content
 
 .site-banner {
-position: absolute; 
-top: 0;
+display: flex; 
+align-items: flex-start;
 background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
 			url("../../images/home-hero.jpg");
 background-size: cover;
 height: 100vh;
 width: 100%; 
 text-align: center;
+z-index: -1000;
 } 
 
 .circle-logo {
@@ -116,21 +118,33 @@ text-align: center;
 	z-index: 2;
 }
 
-
-
 .about-banner {
-	display: block; 
 	position: absolute; 
 	top: 0;
-	background-image: url("/images/about-hero.jpg");
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
+				url("../../images/about-hero.jpg");
 	background-size: cover;
-	height: 100vh;	
+	height: 100vh;
+	width: 100%; 
+	text-align: center;
+	z-index: -1000;
 }
+
+
+.product-btn {
+	background: #248a83;
+	padding: .5em 1em;
+
+}
+
 
 // FOOTER 
 
 .site-footer {
-background-image: url("../../images/dark-wood@2x.png");
+	display: block;
+	background-image: url("../../images/dark-wood@2x.png");
+	width: 100%;
+	height: 21em;
 
 	.div-content-wrapper {
 		display: flex; 
@@ -155,7 +169,7 @@ background-image: url("../../images/dark-wood@2x.png");
 			padding-top: 1.5em;
 
 			embed {
-				width: 150x;
+				width: 250px;
 			}
 		}
 
@@ -172,4 +186,41 @@ background-image: url("../../images/dark-wood@2x.png");
 		}
 	}
 
+}
+
+// Main 
+
+.product-section-container {
+	text-align: center;
+
+	.product-block-wrapper {
+		display: flex;
+		flex-direction: row;
+		width: 66%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		.product-block-single {
+			width: 350px;
+			height: 210px;
+			padding: 0.75em;
+			background-color: white;
+			color: 404040; 
+			margin: 0.75em;
+			border: 1px solid #e1e1e1;
+			border-top-width: 5px;
+		}
+
+		img {
+			height: 70px; 
+			width: 70px;
+		}
+	}
+}
+
+
+.search-form .search-submit {
+	background-color: inherit;
+	border: none;
 }

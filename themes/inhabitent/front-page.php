@@ -26,14 +26,43 @@
         <?php endif; ?>
 
         <section class="site-banner">
-            <?php get_header(); ?>
+             <?php get_header(); ?>
             <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo">
         </section>
 
+        <section class="product-section-container">
+            <h2> Shop Stuff </h2> 
+            <div class="product-block-wrapper">
+
+                <div class="product-block-single">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/do.svg" alt="Things to Do">
+                    <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+                    <button class="product-btn">Do Stuff</button>
+                 </div> 
+
+                 <div class="product-block-single">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/eat.svg" alt="Things to Eat">
+                    <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+                    <button class="product-btn">Eat Stuff</button>
+                 </div> 
+
+                 <div class="product-block-single">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/sleep.svg" alt="Where to Sleep">
+                    <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+                    <button class="product-btn">Sleep Stuff</button>
+                 </div> 
+
+                 <div class="product-block-single">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/wear.svg" alt="Things to Wear">
+                    <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+                    <button class="product-btn">Wear Stuff</button>
+                 </div> 
+            </div>
+        </section> 
+
         </main>
         
-    </div><!-- #primary -->
+    </div>
 
-<?php get_sidebar(); ?> 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

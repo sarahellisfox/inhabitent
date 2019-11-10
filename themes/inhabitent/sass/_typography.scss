@@ -72,6 +72,15 @@ big {
 	font-size: 125%;
 }
 
+h2 {
+	text-transform: uppercase;
+	color: #2f1339; 
+	font-family: Novecento Sans Web,sans-serif; 
+	font-weight: lighter;
+	font-size: 2em;
+
+}
+
 h3 {
 	text-transform: uppercase;
 	color: #d99054; 
@@ -81,3 +90,15 @@ h3 {
 .bold-text {
 	font-weight: bold;
 }
+
+button {
+	color: white;
+	font-family: Novecento Sans Web,sans-serif; 
+	font-size: .9rem;
+	text-transform: uppercase;
+}
+
+.hidetitle .entry-title {
+	display:none;
+	}
+	
