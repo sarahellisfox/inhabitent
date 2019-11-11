@@ -131,3 +131,9 @@ function tt_hidetitle_class($classes) {
 	}
 	
 	add_filter('post_class', 'tt_hidetitle_class');
+
+	// Defines new size for thumbnail picture 
+
+	add_theme_support( 'post-thumbnails' ); 
+	add_image_size( 'feature-post size', 350, 2250 );
+
