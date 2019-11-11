@@ -134,7 +134,6 @@ z-index: -1000;
 .product-btn {
 	background: #248a83;
 	padding: .5em 1em;
-
 }
 
 
@@ -219,8 +218,51 @@ z-index: -1000;
 	}
 }
 
-
 .search-form .search-submit {
 	background-color: inherit;
 	border: none;
 }
+
+// Journal on Front Page 
+
+.journal-feature-container {
+	width: 100%; 
+	text-align: center; 
+
+	.journal-feature-block-wrapper { 
+	display: flex; 
+	text-align: left;
+	flex-direction: row; 
+	width: 66%;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.journal-feature-block-single {
+		position: relative;
+		margin: 0.75em;
+		border: 1px solid #e1e1e1;
+
+		.featured-text-wrapper {
+			padding: 0 .75em; 
+
+			.featured-title {
+				padding-bottom: 2em;
+			}
+
+			.featured-btn {
+				position: absolute;
+    			bottom: 0.5em;
+    			left: .75em;
+				background-color: #FFFFFF;
+				padding: .5em 1em;
+				border: 1px solid #000000;
+
+				
+			}
+		}
+	}
+
+}
+

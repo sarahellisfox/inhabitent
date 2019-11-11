@@ -329,9 +329,9 @@ big {
 h2 {
   text-transform: uppercase;
   color: #2f1339;
-  font-family: Novecento Sans Web,sans-serif;
-  font-weight: lighter;
-  font-size: 2em; }
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: normal;
+  font-size: 1.6em; }
 
 h3 {
   text-transform: uppercase;
@@ -341,14 +341,30 @@ h3 {
 .bold-text {
   font-weight: bold; }
 
-button {
+.product-btn {
   color: white;
   font-family: Novecento Sans Web,sans-serif;
   font-size: .9rem;
   text-transform: uppercase; }
 
+.featured-btn {
+  color: black;
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
+  font-size: .9rem; }
+
 .hidetitle .entry-title {
   display: none; }
+
+.featured-title {
+  font-family: Novecento Sans Web,sans-serif;
+  color: #248a83;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.25; }
+
+.featured-date {
+  font-size: 12px; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -613,3 +629,35 @@ body {
 .search-form .search-submit {
   background-color: inherit;
   border: none; }
+
+.journal-feature-container {
+  width: 100%;
+  text-align: center; }
+  .journal-feature-container .journal-feature-block-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 66%;
+    color: black;
+    margin-left: auto;
+    margin-right: auto; }
+  .journal-feature-container .journal-feature-block-single {
+    position: relative;
+    margin: 0.75em;
+    border: 1px solid #e1e1e1; }
+    .journal-feature-container .journal-feature-block-single .featured-text-wrapper {
+      padding: 0 .75em; }
+      .journal-feature-container .journal-feature-block-single .featured-text-wrapper .featured-title {
+        padding-bottom: 2em; }
+      .journal-feature-container .journal-feature-block-single .featured-text-wrapper .featured-btn {
+        position: absolute;
+        bottom: 0.5em;
+        left: .75em;
+        background-color: #FFFFFF;
+        padding: .5em 1em;
+        border: 1px solid #000000; }

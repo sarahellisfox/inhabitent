@@ -58,11 +58,31 @@
                     <button class="product-btn">Wear Stuff</button>
                  </div> 
             </div>
+        </section>
+
+        <section class="journal-feature-container">
+            <h2>Inhabitent Journal</h2> 
+            <div class="journal-feature-block-wrapper">
+
+            <?php
+                $args = array( 'numberposts' => 3, 'order'=> 'desc', 'orderby' => 'date' );
+                $postslist = get_posts( $args );
+                foreach ($postslist as $post) :  setup_postdata($post); ?> 
+                    <div class="journal-feature-block-single">
+                        <?php the_post_thumbnail('medium'); ?>     
+                        <div class="featured-text-wrapper"> 
+                        <p class="featured-date"><?php the_date('j F, Y');?>  / <?php get_comments(); ?> </p>
+                        <p class="featured-title"><?php the_title(); ?></p> 
+                        <button class="featured-btn"><?php get_permalink(); ?>Read Entry</button>
+                        </div>
+                    </div>
+            <?php endforeach; ?>
+
+            </div> 
         </section> 
 
         </main>
         
     </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
