@@ -4,7 +4,7 @@
     <main id="main" class="site-main" role="main">
 
         <section class="product-section-container">
-            <h2>Shop Stuff</h2>
+            <h2 class="front-page-title">Shop Stuff</h2>
 
             <?php
                $terms = get_terms( array(
@@ -27,11 +27,11 @@
          </section>
 
         <section class="journal-feature-container">
-            <h2>Inhabitent Journal</h2> 
+            <h2 class="front-page-title">Inhabitent Journal</h2> 
             <div class="journal-feature-block-wrapper">
 
             <?php
-                $args = array( 'numberposts' => 3, 'order'=> 'desc', 'orderby' => 'date' );
+                $args = array( 'numberposts' => 3);
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?> 
                     <div class="journal-feature-block-single">
@@ -48,37 +48,36 @@
         </section> 
 
         <section class="latest-adventures-container">
-            <h2>Latest Adventures</h2> 
-            <div class="latest-adventures-block-wrapper">
-                <div class="adventure-grid div1">
-                    <div class="text-btn-wrap">
-                        <h3 class="adventure-text">Getting Back to Nature in a Canoe</h3>
-                <button class="read-more-button">Read More</button>
-                    </div> 
-                </div>
-               
-
-                <div class="adventure-grid div2">
-                    <div class="text-btn-wrap">
-                        <h3 class="adventure-text">A Night With Friends at the Beach</h3>
-                <button class="read-more-button">Read More</button></div> 
-                </div>
+            <h2 class="front-page-title">Latest Adventures</h2> 
+        <div class="latest-adventures-block-wrapper">
+                <?php
+                    $args = array( 
+                        'post_type' => 'adventures',
+                        'posts_per_page' => 4, 
+                    ); 
+                    $adventures = new WP_Query( $args );
+                ?>
+                <?php if ( $adventures->have_posts() ) : ?>    
+                    <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
+                        <div class="adventure-block" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' <?php the_post_thumbnail_url(); ?> ') no-repeat top; background-size: cover, cover;)">
+                            <div class="text-btn-wrap"> 
+                                <h3 class="adventure-text"><?php the_title(); ?></h3>
+                                <a href="<?php the_permalink(); ?>"><button class="read-more-button">Read More</button></a>
+                            </div> 
+                        </div>
+        
+                <?php 
                 
-                <div class="adventure-grid div3">
-                    <div class="text-btn-wrap">
-                        <h3 class="adventure-text">Taking in the View at Big Mountain</h3>
-                    <button class="read-more-button">Read More</button></div> 
-                </div>
+                endwhile; ?>
 
-                <div class="adventure-grid div4">
-                    <div class="text-btn-wrap">
-                        <h3 class="adventure-text">Star-gazing at the Night Sky</h3>
-                    <button class="read-more-button">Read More</button></div>
-                </div>
-
-                <button class="adventures-btn">More Adventures</button>
-
+</div> 
+<?php
+            endif;?>
+            <div class="adventure-btn-wrapper">
+                        <button class="adventures-btn">More Adventures</button>
+                    </div> 
             </div> 
+ 
         </section> 
 
         </main>
