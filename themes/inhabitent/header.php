@@ -13,22 +13,34 @@
 
 <body <?php body_class(); ?>>
 
-<!--  Navigation  -->
+	<header id="masthead" class="masthead" role="banner">
+		
+		<div class="nav-wrapper">
 
+			<nav id="primary_menu" class="menu"" role="navigation">
 
-<header id="site-header" class="site-header" role="navigation">	
+			<a href="<?php echo SITELINK; ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" class="header-logo"><h1 class="screen-reader">Inhabitent
+			</h1></a>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+			</nav> 
+
+		</div>
+
+		<div class="banner-wrapper">
+			<?php
+			if(is_front_page() || is_page('About')){
+			if ( has_post_thumbnail() ) {
+			the_post_thumbnail('banner');
+				}
+			}
+			?>
+		</div> 
+
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo"> 
 	
-	<a href="<?php echo SITELINK; ?>">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" class="header-logo"><h1 class="screen-reader">Inhabitent
-	</h1></a>
+	</header>
 
-	<nav id="primary_menu" class="menu"" role="navigation">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		<?php get_search_form (); ?>
-	</nav> 
-
-</header>
-
-<div id="content" class="site-content">				
-				
-
+<div id="content" class="site-content">	

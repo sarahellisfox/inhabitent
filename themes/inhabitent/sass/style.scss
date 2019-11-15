@@ -78,35 +78,23 @@ body {
 
 /* Links */
 
-// HEADER 
-
-
-
-	// .banner-logo-wrapper {
-	// 	position: absolute;
-	// 	top: 0; 
-	// 	left: 0;
-	// 	width: 275px; 
-	// 	height: 275px;
-	//   }
-
-	// }
-// }
-
-
 // Banner Content
 
 .site-banner {
 display: flex; 
-align-items: flex-start;
-background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
-			url("../../images/home-hero.jpg");
-background-size: cover;
+align-items: flex-start; 
 height: 100vh;
 width: 100%; 
-text-align: center;
+overflow: hidden;
+text-align: center; 
 z-index: -1000;
-} 
+
+	img {
+		width: 100%; 
+		height: auto;
+		z-index: -1000;
+
+	}
 
 .circle-logo {
 	position: absolute;
@@ -118,18 +106,7 @@ z-index: -1000;
 	z-index: 2;
 }
 
-.about-banner {
-	position: absolute; 
-	top: 0;
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 
-				url("../../images/about-hero.jpg");
-	background-size: cover;
-	height: 100vh;
-	width: 100%; 
-	text-align: center;
-	z-index: -1000;
 }
-
 
 .product-btn {
 	background: #248a83;
@@ -325,4 +302,9 @@ z-index: -1000;
 	.text-btn-wrap {
 		display: block;
 		padding: 0 1em;
+	}
+
+
+	body {
+		color: red;
 	}

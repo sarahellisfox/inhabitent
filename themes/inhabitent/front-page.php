@@ -5,6 +5,7 @@
         <?php if ( have_posts() ) : ?>
 
             <?php if ( is_front_page() && is_home() ) : ?>
+                
                 <header>
                     <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
                 </header>
@@ -25,11 +26,8 @@
 
         <?php endif; ?>
 
-        <section class="site-banner">
-             <?php get_header(); ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo">
-        </section>
-
+        <?php get_header(); ?>
+ 
         <section class="product-section-container">
             <h2> Shop Stuff </h2> 
             <div class="product-block-wrapper">
