@@ -33,12 +33,15 @@
 			<?php
 			if(is_front_page() || is_page('About')){
 			if ( has_post_thumbnail() ) {
-			the_post_thumbnail('banner');
+				$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+				echo 
+					'<div class="banner-wrapper" style="background: 
+						linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' . $url . ') no-repeat top; background-size: cover,cover;"
+					</div>';				
+					}
 				}
-			}
 			?>
-		</div> 
-
+	
 		<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo"> 
 	
 	</header>

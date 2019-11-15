@@ -138,3 +138,5 @@ function tt_hidetitle_class($classes) {
 	add_image_size( 'feature-post size', 350, 225 );
 	add_image_size( 'banner size', 4000, 2667 ); 
 
+	// // For setting feature image as a background 
+	// $thumb = get_the_post_thumbnail_url();  
