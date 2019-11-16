@@ -18,7 +18,7 @@
                   <?php foreach ( $terms as $term ) : ?>
                      <div class="product-block-single">
                         <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-                        <p><?php echo $term->description; ?></p>
+                        <p class="product-desc-text"><?php echo $term->description; ?></p>
                         <p><a href="<?php echo get_term_link( $term ); ?>" class="product-btn"><?php echo $term->name; ?> Stuff</a></p>
                      </div>
                   <?php endforeach; ?>

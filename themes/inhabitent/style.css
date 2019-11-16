@@ -306,7 +306,7 @@ pre {
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
   max-width: 100%;
   overflow: auto; }
 
@@ -342,6 +342,9 @@ h3 {
 
 button {
   font-size: 10pt; }
+
+.product-desc-text {
+  margin-bottom: 1.5rem; }
 
 .product-btn, .adventures-btn {
   color: white;
@@ -387,11 +390,11 @@ button {
     font-size: 1.5em; }
 
 .front-page-title {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
   color: #2f1339;
   font-family: Novecento Sans Web, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 2.5em; }
 
 /*--------------------------------------------------------------
@@ -628,12 +631,12 @@ body {
     margin-right: auto; }
     .product-section-container .product-block-wrapper .product-block-single, .journal-feature-container .product-block-wrapper .product-block-single, .latest-adventures-container .product-block-wrapper .product-block-single {
       width: 350px;
-      height: 210px;
+      height: 240px;
       padding: 0.75em;
       background-color: white;
       color: 404040;
       size: 0.75em;
-      margin: 0.75em;
+      margin: 0.5em;
       border: 1px solid #e1e1e1;
       border-top-width: 5px; }
       .product-section-container .product-block-wrapper .product-block-single a, .journal-feature-container .product-block-wrapper .product-block-single a, .latest-adventures-container .product-block-wrapper .product-block-single a {
@@ -657,7 +660,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1120px;
+  min-width: 1120px;
   color: black;
   margin-left: auto;
   margin-right: auto; }
