@@ -37,7 +37,7 @@
                     <div class="journal-feature-block-single">
                         <?php the_post_thumbnail(   'feature-post size'    ); ?>     
                         <div class="featured-text-wrapper"> 
-                        <p class="featured-date"><?php the_date('j F, Y');?>  / <?php get_comments(); ?> </p>
+                        <p class="featured-date"><?php the_date('j F, Y');?>  / <?php comments_number('0 comments ', '1 comment', '% comments'); ?> </p>
                         <p class="featured-title"><?php the_title(); ?></p> 
                         <button class="featured-btn"><?php get_permalink(); ?>Read Entry</button>
                         </div>
