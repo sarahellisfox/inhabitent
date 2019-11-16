@@ -109,12 +109,6 @@ require get_template_directory() . '/inc/extras.php';
 /** Sets a link for the logo in the nav bar */
 define ('SITELINK', 'http://localhost:8888/inhabitent/');
 
-/** Removes the admin header -- which adds a 32px margin to the page */
-function remove_admin_login_header() {
-    remove_action('wp_head', '_admin_bar_bump_cb');
-}
-add_action('get_header', 'remove_admin_login_header');
-
 // Remove Page Title 
 function tt_hidetitle_class($classes) {
 
@@ -137,6 +131,3 @@ function tt_hidetitle_class($classes) {
 	add_theme_support( 'post-thumbnails' ); 
 	add_image_size( 'feature-post size', 350, 225 );
 	add_image_size( 'banner size', 4000, 2667 ); 
-
-	// // For setting feature image as a background 
-	// $thumb = get_the_post_thumbnail_url();  
