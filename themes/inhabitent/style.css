@@ -356,7 +356,7 @@ button {
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase; }
 
-.hidetitle .entry-title {
+.home .entry-title, .blog .entry-title, .archive .entry-title, .page-id-58 .entry-title {
   display: none; }
 
 .featured-title {
@@ -431,6 +431,11 @@ button {
 .widget_archive a {
   text-decoration: none;
   color: #248a83; }
+
+/* About Page */
+.page-template-page-about .entry-title {
+  font-size: 3em;
+  color: #FFFFFF; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -514,7 +519,7 @@ button {
   .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo {
     background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
 
-.home .circle-logo, .page-template-page-about .circle-logo {
+.home .circle-logo {
   position: absolute;
   background-image: url("../../images/logos/inhabitent-logo-full.svg");
   background-size: contain;
@@ -697,7 +702,7 @@ button {
       grid-row: 1 / 2; }
   .latest-adventures-block-wrapper .text-btn-wrap {
     display: block;
-    padding: 0 1em; }
+    padding: 1em; }
 
 .adventure-btn-wrapper {
   width: 1120px;
@@ -736,7 +741,7 @@ button {
 
 /* Journal Page */
 .journal-section-wrapper {
-  width: 100%;
+  width: 1120px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -750,6 +755,8 @@ button {
   .journal-section-wrapper .journal-section {
     max-width: 70%;
     border-right: 1px solid #e1e1e1; }
+    .journal-section-wrapper .journal-section .journal-single-post {
+      margin-top: 1.5rem; }
   .journal-section-wrapper .widget-area {
     width: 30%;
     padding-left: 1em;
@@ -764,7 +771,7 @@ button {
         -ms-flex-pack: start;
             justify-content: flex-start;
     white-space: nowrap; }
-  .journal-section-wrapper .widget_archive ul {
+  .journal-section-wrapper ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -773,13 +780,34 @@ button {
 .widget-title:nth-of-type(1) {
   padding-top: 1.5em; }
 
-.journal-single-post {
-  margin-top: 1.5rem; }
-
 .widget_custom_html a {
   margin-left: 0.5em; }
   .widget_custom_html a span {
     padding-left: 1.5em; }
+
+.blog .content-area {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+/* About Page */
+.page-template-page-about .entry-title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -250px; }
+
+.home .banner-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover; }
+
+.page-template-page-about .banner-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
+  background-size: cover; }
 
 body {
   width: 100%;

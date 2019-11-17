@@ -32,8 +32,7 @@
 			if ( has_post_thumbnail() ) {
 				$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 				echo 
-					'<div class="banner-wrapper" style="background: 
-						linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' . $url . ') no-repeat top; background-size: cover,cover;"
+					'<div class="banner-wrapper" style="background">
 					</div>';				
 					}
 				}

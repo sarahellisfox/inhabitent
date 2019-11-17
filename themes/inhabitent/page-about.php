@@ -1,26 +1,24 @@
+<?php
+/**
+ * The template for displaying all pages.
+ * Template Name: page-about 
+ *  @package RED_Starter_Theme
+ */
+?>
+
 <?php get_header(); ?> 
 
-<?php if ( have_posts() ) : ?>
+    <div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-<?php if ( is_home() ) : ?>
-    <section>
-        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-    </section>
-<?php endif; ?>
+    <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-<?php /* Start the Loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'template-parts/content-page' ); ?>
 
-    <?php get_template_part( 'template-parts/content' ); ?>
+    <?php endwhile; // End of the loop. ?>
 
-<?php endwhile; ?>
-
-<?php the_posts_navigation(); ?>
-
-<?php else : ?>
-
-<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-<?php endif; ?>
+        </main> 
+    </div> 
 
 <?php get_footer(); ?>

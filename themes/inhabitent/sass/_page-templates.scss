@@ -4,7 +4,7 @@
 
 /* Front Page */
 
-// Product Section on Front Page
+// Product Section - Front Page
 
 .product-section-container {
 	text-align: center;
@@ -41,7 +41,7 @@
 	}
 }
 
-// Journal on Front Page 
+// Journal - Front Page 
 
 .journal-feature-container {
 	@extend .product-section-container; 
@@ -84,7 +84,7 @@
 
 }
 
-// Front Page Adventure Section 
+// Adventure Section - Front Page 
 
 .latest-adventures-container {
 	@extend .product-section-container; 
@@ -119,7 +119,7 @@
 
 	.text-btn-wrap {
 		display: block;
-		padding: 0 1em;
+		padding: 1em;
 	}
 }
 
@@ -152,7 +152,6 @@
         padding: 0 1em;
         font-size: 1.2rem;
     }
-
 }
 
 .shop-products-grid {
@@ -161,14 +160,12 @@
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
-
 }
 
 /* Journal Page */
 
 .journal-section-wrapper {
-	width: 100%; 
+	width: 1120px; 
 	display: inline-flex; 
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -177,6 +174,9 @@
 		max-width: 70%; 
 		border-right: 1px solid #e1e1e1;
 
+		.journal-single-post {
+			margin-top: $base__space-unit;
+		}
 	}
 
 	.widget-area {
@@ -188,25 +188,18 @@
 		white-space: nowrap;
 	}
 
-	.widget_archive {
-
 		ul {
 			margin: 0; 
 			padding: 0;
 			list-style: none;
 			text-align: left;
 		}
-	}
 }
 
 .widget-title  {
 	&:nth-of-type(1) {
 		padding-top: 1.5em;
 	}
-}
-
-.journal-single-post {
-	margin-top: $base__space-unit;
 }
 
 .widget_custom_html {
@@ -219,4 +212,38 @@
 	}
 }
 
+.blog {
+	.content-area {
+		align-content: center;
+	}
+}
 
+/* About Page */ 
+
+.page-template-page-about {
+	.entry-title {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		width: 500px;
+		height: 500px; 
+		margin-top: -250px; 
+   		margin-left: -250px; 
+	}
+}
+
+.home {
+	.banner-wrapper {
+		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+					#969696 url(../../images/home-hero.jpg) no-repeat top; 
+					background-size: cover;
+	}
+}
+
+.page-template-page-about {
+	.banner-wrapper {
+		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+					#969696 url(../../images/about-hero.jpg) no-repeat bottom; 
+					background-size: cover;
+	}
+}

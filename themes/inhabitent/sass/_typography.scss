@@ -109,10 +109,12 @@ button {
 	text-transform: uppercase;
 }
 
-
-.hidetitle .entry-title {
+.home, .blog, .archive, .page-id-58 {
+	
+	.entry-title {
 	display:none;
 	}
+}
 
 .featured-title {
 	font-family: Novecento Sans Web,sans-serif;
@@ -221,5 +223,14 @@ button {
 	a {
 		text-decoration: none;
 		color: $color_site_green
+	}
+}
+
+/* About Page */ 
+
+.page-template-page-about {
+	.entry-title {
+		font-size: 3em;
+		color: #FFFFFF;
 	}
 }
