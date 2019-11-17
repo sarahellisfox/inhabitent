@@ -49,7 +49,7 @@
 	.journal-feature-block-wrapper { 
 	display: flex; 
 	flex-direction: row; 
-	justify-content: center;
+	justify-content: space-between;
 	min-width: 1120px;
 	color: black;
 	margin-left: auto;
@@ -60,7 +60,6 @@
 		text-align: left;
 		width: 350px;
 		position: relative;
-		margin: 1em;
 		border: 1px solid #e1e1e1;
 
 		.featured-text-wrapper {

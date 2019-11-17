@@ -95,13 +95,16 @@ body {
 	height: 21em;
 
 	.div-content-wrapper {
+		width: 1120px;
+		margin-left: auto; 
+		margin-right: auto;
 		display: flex; 
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		color: #FFFFFF;
 		font-size: 1em;
-		padding: 3em 15em 0 15em;
+		padding: 3em 0;
 
 		.div-contact {
 			width: 25%; 

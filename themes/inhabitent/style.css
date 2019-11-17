@@ -274,7 +274,6 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -331,7 +330,7 @@ h2 {
   color: #2f1339;
   font-family: Novecento Sans Web, sans-serif;
   font-weight: normal;
-  font-size: 1.6em; }
+  font-size: 1.5em; }
 
 h3 {
   text-transform: uppercase;
@@ -365,7 +364,8 @@ button {
   color: #248a83;
   font-size: 1.2em;
   font-weight: 600;
-  line-height: 1.25; }
+  line-height: 1.25;
+  letter-spacing: 2px; }
 
 .featured-date {
   font-size: 12px; }
@@ -395,7 +395,7 @@ button {
   color: #2f1339;
   font-family: Novecento Sans Web, sans-serif;
   font-weight: 400;
-  font-size: 2.5em; }
+  font-size: 2em; }
 
 .entry-title {
   font-family: Novecento Sans Web,sans-serif;
@@ -650,9 +650,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 1120px;
   color: black;
   margin-left: auto;
@@ -662,7 +662,6 @@ button {
   text-align: left;
   width: 350px;
   position: relative;
-  margin: 1em;
   border: 1px solid #e1e1e1; }
   .journal-feature-container .journal-feature-block-single .featured-text-wrapper {
     padding: 0 .75em; }
@@ -800,6 +799,9 @@ body {
   width: 100%;
   height: 21em; }
   .site-footer .div-content-wrapper {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -814,7 +816,7 @@ body {
             justify-content: space-between;
     color: #FFFFFF;
     font-size: 1em;
-    padding: 3em 15em 0 15em; }
+    padding: 3em 0; }
     .site-footer .div-content-wrapper .div-contact {
       width: 25%; }
     .site-footer .div-content-wrapper .div-hours {

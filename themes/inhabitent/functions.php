@@ -129,6 +129,6 @@ function tt_hidetitle_class($classes) {
 	// Defines new size for thumbnail picture 
 
 	add_theme_support( 'post-thumbnails' ); 
-	add_image_size( 'feature-post size', 350, 225 );
+	add_image_size( 'feature-post size', 352, auto);
 	add_image_size( 'banner size', 4000, 2667 ); 
 
