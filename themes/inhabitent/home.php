@@ -1,26 +1,57 @@
-<?php get_header(); ?> 
+<?php
+/**
+ * The main template file.
+ *
+ * @package RED_Starter_Theme
+ */
+get_header(); ?>
 
-<?php if ( have_posts() ) : ?>
+<div class="content-main">
 
-<?php if ( is_home() ) : ?>
-    <section>
-        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-    </section>
-<?php endif; ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-<?php /* Start the Loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
+			<?php if (have_posts()) : ?>
 
-    <?php get_template_part( 'template-parts/content' ); ?>
+			<?php if (is_home() && !is_front_page()) : ?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+			<?php endif; ?>
 
-<?php endwhile; ?>
+            <section class="journal-section-wrapper">
 
-<?php the_posts_navigation(); ?>
 
-<?php else : ?>
+            <div id="secondary" class="widget-area" role="complementary">
+                <?php get_sidebar(); ?>
+            </div> 
 
-<?php get_template_part( 'template-parts/content', 'none' ); ?>
+                <div class="journal-section">   
+            
+                    <?php /* Start the Loop */ ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    
+                    <div class="journal-single-post">
+                        <?php get_template_part('template-parts/content'); ?>
+                    </div> 
 
-<?php endif; ?>
+                    <?php endwhile; ?>
 
+                    <?php the_posts_navigation(); ?>
+
+                    <?php else : ?>
+
+                        <?php get_template_part('template-parts/content', 'none'); ?>
+
+                    <?php endif; ?>
+
+            
+                </div> 
+
+            </section> 
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+</div>
 <?php get_footer(); ?>

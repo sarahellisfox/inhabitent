@@ -2,4 +2,222 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front Page */
+
+// Product Section on Front Page
+
+.product-section-container {
+	text-align: center;
+	width: 100%;
+
+	.product-block-wrapper {
+		display: flex;
+		flex-direction: row;
+		width: 1120px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		.product-block-single {
+			width: 350px;
+			height: 240px;
+			padding: 0.75em;
+			background-color: white;
+			color: 404040; 
+			size: 0.75em;
+			margin: 0.5em;
+			border: 1px solid #e1e1e1;
+			border-top-width: 5px;
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+		img {
+			height: 70px; 
+			width: 70px;
+		}
+	}
+}
+
+// Journal on Front Page 
+
+.journal-feature-container {
+	@extend .product-section-container; 
+
+	.journal-feature-block-wrapper { 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center;
+	min-width: 1120px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.journal-feature-block-single {
+		text-align: left;
+		width: 350px;
+		position: relative;
+		margin: 1em;
+		border: 1px solid #e1e1e1;
+
+		.featured-text-wrapper {
+			padding: 0 .75em; 
+
+			.featured-title {
+				padding-bottom: 2em;
+			}
+
+			.featured-btn {
+				position: absolute;
+    			bottom: 0.5em;
+    			left: .75em;
+				background-color: #FFFFFF;
+				padding: .5em 1em;
+				border: 1px solid #000000;
+
+				
+			}
+		}
+	}
+
+}
+
+// Front Page Adventure Section 
+
+.latest-adventures-container {
+	@extend .product-section-container; 
+}
+
+	.latest-adventures-block-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 10px;
+		width: 1120px; 
+		margin-left: auto; 
+		margin-right: auto; 
+
+	.adventure-block {
+		min-height: 265px; 
+
+		&:nth-of-type(1) { 
+			grid-column: 1 / 2;
+			grid-row: 1 / 3;
+			width: 550px; 
+			height: 550px;	
+		}
+
+		&:nth-of-type(2) { 
+			width: 560px;
+			height: 265px;
+			grid-column: 2 / 4;
+            grid-row: 1 / 2;
+		}
+	}
+
+	.text-btn-wrap {
+		display: block;
+		padding: 0 1em;
+	}
+}
+
+.adventure-btn-wrapper {
+	width: 1120px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	text-align: left; 
+
+}
+
+/* Shop Page */ 
+
+.site-main {
+    width: 1120px; 
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.shop-catagory-wrapper {
+    display: flex; 
+    justify-content: center;
+    width: 1120px; 
+    margin-right: auto; 
+    margin-left: auto;
+    margin-bottom: $base__space-unit;
+
+    .shop-product-type {
+        display: inline;
+        padding: 0 1em;
+        font-size: 1.2rem;
+    }
+
+}
+
+.shop-products-grid {
+    width: 1120px;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+}
+
+/* Journal Page */
+
+.journal-section-wrapper {
+	width: 100%; 
+	display: inline-flex; 
+	flex-direction: row-reverse;
+	justify-content: space-between;
+
+	.journal-section {
+		max-width: 70%; 
+		border-right: 1px solid #e1e1e1;
+
+	}
+
+	.widget-area {
+		width: 30%; 
+		padding-left: 1em;
+		display: flex; 
+		flex-direction: column;
+		justify-content: flex-start;
+		white-space: nowrap;
+	}
+
+	.widget_archive {
+
+		ul {
+			margin: 0; 
+			padding: 0;
+			list-style: none;
+			text-align: left;
+		}
+	}
+}
+
+.widget-title  {
+	&:nth-of-type(1) {
+		padding-top: 1.5em;
+	}
+}
+
+.journal-single-post {
+	margin-top: $base__space-unit;
+}
+
+.widget_custom_html {
+	a {
+		margin-left: 0.5em;
+
+		span {
+			padding-left: 1.5em;
+		}
+	}
+}
+
+

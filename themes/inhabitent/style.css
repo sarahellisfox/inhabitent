@@ -397,6 +397,41 @@ button {
   font-weight: 400;
   font-size: 2.5em; }
 
+.entry-title {
+  font-family: Novecento Sans Web,sans-serif;
+  color: #404040;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding-top: 3rem; }
+
+.shop-product-type {
+  font-family: Novecento Sans Web,sans-serif;
+  color: #248a83;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 0; }
+
+/* Journal Page */
+.widget-area p, .widget-area ul, .widget-area li, .widget-area a {
+  font-size: 1em;
+  font-family: Merriweather Web,serif;
+  line-height: 1.75; }
+
+.widget-area a {
+  text-decoration: none;
+  color: #248a83; }
+
+.widget-title {
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.widget_archive a {
+  text-decoration: none;
+  color: #248a83; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -418,8 +453,6 @@ button {
   margin: 1em 0 4em 0; }
 
 .masthead {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +461,8 @@ button {
   .masthead .nav-wrapper {
     width: 100%;
     height: 50px;
-    position: absolute; }
+    position: absolute;
+    border-bottom: 1px solid #e1e1e1; }
     .masthead .nav-wrapper .header-logo {
       width: 50px;
       height: 50px; }
@@ -452,7 +486,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin-bottom: 1.5rem; }
   .menu ul {
     list-style: none;
     z-index: 2;
@@ -535,7 +570,6 @@ button {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -559,61 +593,7 @@ button {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-body {
-  width: 100%;
-  height: auto; }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-.product-btn, .adventures-btn {
-  background: #248a83;
-  padding: .5em 1em; }
-
-.site-footer {
-  display: block;
-  background-image: url("../../images/dark-wood@2x.png");
-  width: 100%;
-  height: 21em; }
-  .site-footer .div-content-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    color: #FFFFFF;
-    font-size: 1em;
-    padding: 3em 15em 0 15em; }
-    .site-footer .div-content-wrapper .div-contact {
-      width: 25%; }
-    .site-footer .div-content-wrapper .div-hours {
-      width: 25%; }
-    .site-footer .div-content-wrapper .footer-logo {
-      width: 50%;
-      text-align: right;
-      padding-top: 1.5em; }
-      .site-footer .div-content-wrapper .footer-logo embed {
-        width: 250px; }
-    .site-footer .div-content-wrapper .fab {
-      padding: 0 .20em; }
-    .site-footer .div-content-wrapper .footer-copyright {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 100%;
-              flex: 0 1 100%;
-      text-align: center;
-      padding-top: 2em;
-      font-weight: lighter;
-      font-size: 0.9em; }
-
+/* Front Page */
 .product-section-container, .journal-feature-container, .latest-adventures-container {
   text-align: center;
   width: 100%; }
@@ -644,10 +624,6 @@ body {
     .product-section-container .product-block-wrapper img, .journal-feature-container .product-block-wrapper img, .latest-adventures-container .product-block-wrapper img {
       height: 70px;
       width: 70px; }
-
-.search-form .search-submit {
-  background-color: inherit;
-  border: none; }
 
 .journal-feature-container .journal-feature-block-wrapper {
   display: -webkit-box;
@@ -712,3 +688,137 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: left; }
+
+/* Shop Page */
+.site-main {
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.shop-catagory-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.5rem; }
+  .shop-catagory-wrapper .shop-product-type {
+    display: inline;
+    padding: 0 1em;
+    font-size: 1.2rem; }
+
+.shop-products-grid {
+  width: 1120px;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+/* Journal Page */
+.journal-section-wrapper {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .journal-section-wrapper .journal-section {
+    max-width: 70%;
+    border-right: 1px solid #e1e1e1; }
+  .journal-section-wrapper .widget-area {
+    width: 30%;
+    padding-left: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    white-space: nowrap; }
+  .journal-section-wrapper .widget_archive ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left; }
+
+.widget-title:nth-of-type(1) {
+  padding-top: 1.5em; }
+
+.journal-single-post {
+  margin-top: 1.5rem; }
+
+.widget_custom_html a {
+  margin-left: 0.5em; }
+  .widget_custom_html a span {
+    padding-left: 1.5em; }
+
+body {
+  width: 100%;
+  height: auto; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* Links */
+.product-btn, .adventures-btn {
+  background: #248a83;
+  padding: .5em 1em; }
+
+.site-footer {
+  display: block;
+  background-image: url("../../images/dark-wood@2x.png");
+  width: 100%;
+  height: 21em; }
+  .site-footer .div-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 3em 15em 0 15em; }
+    .site-footer .div-content-wrapper .div-contact {
+      width: 25%; }
+    .site-footer .div-content-wrapper .div-hours {
+      width: 25%; }
+    .site-footer .div-content-wrapper .footer-logo {
+      width: 50%;
+      text-align: right;
+      padding-top: 1.5em; }
+      .site-footer .div-content-wrapper .footer-logo embed {
+        width: 250px; }
+    .site-footer .div-content-wrapper .fab {
+      padding: 0 .20em; }
+    .site-footer .div-content-wrapper .footer-copyright {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 100%;
+              flex: 0 1 100%;
+      text-align: center;
+      padding-top: 2em;
+      font-weight: lighter;
+      font-size: 0.9em; }
+
+.search-form .search-submit {
+  background-color: inherit;
+  border: none; }
