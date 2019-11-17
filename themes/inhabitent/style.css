@@ -457,23 +457,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  margin-bottom: 3em; }
+  margin-bottom: 3.2em; }
   .masthead .nav-wrapper {
     width: 100%;
     height: 50px;
-    position: absolute;
-    border-bottom: 1px solid #e1e1e1; }
-    .masthead .nav-wrapper .header-logo {
-      width: 50px;
-      height: 50px; }
-  .masthead .circle-logo {
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    left: 50%;
-    top: 35%;
-    height: 250px;
-    width: 250px; }
+    position: absolute; }
 
 .banner-wrapper {
   width: 100%;
@@ -507,6 +495,35 @@ button {
   width: 1px;
   height: 1px;
   overflow: hidden; }
+
+.header-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 40px;
+  margin-top: 0.75em; }
+
+.home .header-logo, .page-template-page-about .header-logo {
+  background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
+
+.archive .nav-wrapper, .blog .nav-wrapper, .page-id-58 .nav-wrapper {
+  border-bottom: 1px solid #e1e1e1; }
+  .archive .nav-wrapper a, .blog .nav-wrapper a, .page-id-58 .nav-wrapper a {
+    color: #248a83;
+    text-shadow: none; }
+  .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo {
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
+
+.home .circle-logo, .page-template-page-about .circle-logo {
+  position: absolute;
+  background-image: url("../../images/logos/inhabitent-logo-full.svg");
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 35%; }
 
 /*--------------------------------------------------------------
 # Accessibility

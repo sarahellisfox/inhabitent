@@ -1,27 +1,13 @@
+// Nav Bar Specs Across All Pages 
 .masthead { 
 	display: flex; 
 	overflow: hidden;
-	margin-bottom: 3em;
+	margin-bottom: 3.2em;
 
 	.nav-wrapper { 
 		width: 100%; 
 		height: 50px; 
 		position: absolute; 
-		border-bottom: 1px solid #e1e1e1;
-
-		.header-logo {
-			width: 50px; 
-			height: 50px; 
-		}
-	}
-	
-	.circle-logo {
-		position: absolute; 
-		transform:translateX(-50%);
-		left: 50%;
-		top: 35%;
-		height: 250px; 
-		width: 250px;
 	}
 }
 
@@ -70,7 +56,7 @@
 		// }
 }
 
-
+// Accessibility 
 .screen-reader {
 	position:absolute;
 	left:-10000px;
@@ -78,4 +64,53 @@
 	width:1px;
 	height:1px;
 	overflow:hidden;
+}
+
+// Logo Specs Across All Pages 
+.header-logo { 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	height: 50px; 
+	width: 40px; 
+	margin-top: 0.75em; 	
+} 
+
+.home, .page-template-page-about {
+	
+	.header-logo {
+	background-image: url('../../images/logos/inhabitent-logo-tent-white.svg');
+	}
+}
+
+// Customized Green Nav Bar on Shop, Journal and Find Us Pages 
+.archive, .blog, .page-id-58 {
+
+	.nav-wrapper {
+		border-bottom: 1px solid #e1e1e1;
+
+		a {
+			color: $color_site_green; 
+			text-shadow: none; 
+		}
+
+		.header-logo {
+			background-image: url('../../images/logos/inhabitent-logo-tent.svg');
+		}
+	}
+}
+
+// Circle Logo on Front & About Page 
+
+.home, .page-template-page-about {
+	
+	.circle-logo {
+		position: absolute; 
+		background-image: url('../../images/logos/inhabitent-logo-full.svg');
+		background-size: contain;
+		height: 250px; 
+		width: 250px;
+		transform:translateX(-50%);
+		left: 50%;
+		top: 35%;
+	}
 }

@@ -19,9 +19,7 @@
 
 			<nav id="primary_menu" class="menu"" role="navigation">
 
-			<a href="<?php echo SITELINK; ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" class="header-logo"><h1 class="screen-reader">Inhabitent
-			</h1></a>
+			<a class="header-logo" href="<?php echo SITELINK; ?>"></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
@@ -40,7 +38,8 @@
 					}
 				}
 			?>
-		<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="circle-logo">  -->
+			
+		<div class="circle-logo"></div> 
 	
 	</header>
 
