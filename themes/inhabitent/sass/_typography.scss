@@ -109,13 +109,6 @@ button {
 	text-transform: uppercase;
 }
 
-.home, .blog, .archive {
-	
-	.entry-title {
-	display:none;
-	}
-}
-
 .featured-title {
 	font-family: Novecento Sans Web,sans-serif;
 	color: $color_site_green; 
@@ -182,7 +175,6 @@ button {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2em;
-	padding-top: 3rem;
 }
 
 .shop-product-type {
@@ -261,5 +253,8 @@ button {
 			font-size: 2em;
 		}
 	}
+}
 
+.required {
+	color: #d99054;
 }

@@ -62,7 +62,7 @@
                         <div class="adventure-block" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' <?php the_post_thumbnail_url(); ?> ') no-repeat top; background-size: cover, cover;)">
                             <div class="text-btn-wrap"> 
                                 <h3 class="adventure-text"><?php the_title(); ?></h3>
-                                <a href="<?php the_permalink(); ?>"><button class="read-more-button">Read More</button></a>
+                                <a href="<?php the_permalink(); ?>"><button class="readmore-button">Read More</button></a>
                             </div> 
                         </div>
         

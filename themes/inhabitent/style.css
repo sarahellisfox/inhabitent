@@ -356,9 +356,6 @@ button {
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase; }
 
-.home .entry-title, .blog .entry-title, .archive .entry-title {
-  display: none; }
-
 .featured-title {
   font-family: Novecento Sans Web,sans-serif;
   color: #248a83;
@@ -402,8 +399,7 @@ button {
   color: #404040;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2em;
-  padding-top: 3rem; }
+  font-size: 2em; }
 
 .shop-product-type {
   font-family: Novecento Sans Web,sans-serif;
@@ -454,6 +450,9 @@ button {
   font-weight: bold;
   font-size: 2em; }
 
+.required {
+  color: #d99054; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -461,14 +460,20 @@ button {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-.read-more-button {
+.readmore-button {
   background-color: Transparent;
+  font-family: Novecento Sans Web,sans-serif;
+  text-decoration: none;
   background-repeat: no-repeat;
   color: white;
   border: 1px solid white;
   padding: 0.75em 1em;
   text-transform: uppercase;
   overflow: hidden; }
+
+.blog .readmore-button {
+  color: #000000;
+  border: 1px solid #000000; }
 
 .adventures-btn {
   font-size: 1em;
@@ -478,18 +483,21 @@ button {
   text-transform: uppercase;
   font-family: Novecento Sans Web, sans-serif;
   color: #2f1339;
-  font-size: 0.8em;
-  margin-bottom: .5rem; }
+  font-size: 0.9em;
+  margin-bottom: 1em; }
   .wpcf7 .wpcf7-form-control {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1; }
   .wpcf7 .wpcf7-textarea {
-    width: 600px; }
+    width: 100%;
+    max-width: 600px; }
   .wpcf7 .wpcf7-submit {
     background-color: #248a83;
     color: #FFFFFF;
+    font-size: 0.9em;
     font-family: Novecento Sans Web,sans-serif;
     text-transform: uppercase;
-    padding: .75rem 1.5rem; }
+    padding: 0.75em 1.5em; }
 
 .masthead {
   display: -webkit-box;
@@ -792,15 +800,14 @@ button {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          flex-direction: row-reverse; }
   .journal-section-wrapper .journal-section {
     max-width: 70%;
     border-right: 1px solid #e1e1e1; }
     .journal-section-wrapper .journal-section .journal-single-post {
-      margin-top: 1.5rem; }
+      margin-top: 1.5rem;
+      margin-bottom: 5em;
+      width: 85%; }
   .journal-section-wrapper .widget-area {
     width: 30%;
     padding-left: 1em;
@@ -829,9 +836,34 @@ button {
   .widget_custom_html a span {
     padding-left: 1.5em; }
 
-.blog .content-area {
-  -ms-flex-line-pack: center;
-      align-content: center; }
+.blog .entry-header {
+  position: relative;
+  width: 96%; }
+  .blog .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1em;
+    margin-top: 1em;
+    text-align: left;
+    max-width: 70%;
+    background: #248a83; }
+  .blog .entry-header .entry-meta {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    background: #248a83;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.3em;
+    font-weight: bold; }
+  .blog .entry-header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold; }
+
+.blog p {
+  margin-bottom: 2em; }
 
 /* About Page */
 .page-template-page-about .entry-title {
@@ -865,7 +897,7 @@ button {
       padding-left: 2em; }
 
 .post-58 {
-  padding: 0 2.5em; }
+  padding: 0 2.5em 3em 2.5em; }
 
 body {
   width: 100%;
