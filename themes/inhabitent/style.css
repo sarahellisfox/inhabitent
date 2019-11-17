@@ -356,7 +356,7 @@ button {
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase; }
 
-.home .entry-title, .blog .entry-title, .archive .entry-title, .page-id-58 .entry-title {
+.home .entry-title, .blog .entry-title, .archive .entry-title {
   display: none; }
 
 .featured-title {
@@ -446,6 +446,14 @@ button {
   margin-left: auto;
   margin-right: auto; }
 
+/* Find Us Page */
+.page-id-58 .site-main h1 {
+  text-align: left; }
+
+.page-id-58 .site-main h2 {
+  font-weight: bold;
+  font-size: 2em; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -465,6 +473,23 @@ button {
 .adventures-btn {
   font-size: 1em;
   margin: 1em 0 4em 0; }
+
+.wpcf7 {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  color: #2f1339;
+  font-size: 0.8em;
+  margin-bottom: .5rem; }
+  .wpcf7 .wpcf7-form-control {
+    background-color: #f4f4f4; }
+  .wpcf7 .wpcf7-textarea {
+    width: 600px; }
+  .wpcf7 .wpcf7-submit {
+    background-color: #248a83;
+    color: #FFFFFF;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase;
+    padding: .75rem 1.5rem; }
 
 .masthead {
   display: -webkit-box;
@@ -624,6 +649,16 @@ button {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.home .banner-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover; }
+
+.page-template-page-about .banner-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
+  background-size: cover; }
+
 /* Front Page */
 .product-section-container, .journal-feature-container, .latest-adventures-container {
   text-align: center;
@@ -808,15 +843,29 @@ button {
   margin-top: -250px;
   margin-left: -250px; }
 
-.home .banner-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover; }
+/* Find Us Page */
+.page-id-58 {
+  width: 100%; }
+  .page-id-58 .content-area {
+    width: 1120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-id-58 .content-area .site-main {
+      width: 70%;
+      border-right: 1px solid #e1e1e1; }
+    .page-id-58 .content-area .widget-area {
+      width: 30%;
+      padding-left: 2em; }
 
-.page-template-page-about .banner-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/about-hero.jpg) no-repeat bottom;
-  background-size: cover; }
+.post-58 {
+  padding: 0 2.5em; }
 
 body {
   width: 100%;
@@ -832,9 +881,10 @@ body {
 
 .site-footer {
   display: block;
+  bottom: 0;
   background-image: url("../../images/dark-wood@2x.png");
   width: 100%;
-  height: 21em; }
+  height: auto; }
   .site-footer .div-content-wrapper {
     width: 1120px;
     margin-left: auto;

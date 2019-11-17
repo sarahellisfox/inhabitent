@@ -19,3 +19,28 @@
     font-size: 1em;
 	margin: 1em 0 4em 0;
 }
+
+.wpcf7 {
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    color: #2f1339;
+    font-size: 0.8em;
+    margin-bottom: .5rem;
+
+    .wpcf7-form-control {
+        background-color: #f4f4f4;
+    }
+
+    .wpcf7-textarea  {
+        width: 600px;
+    }
+
+    .wpcf7-submit {
+        background-color: $color_site_green;
+        color: #FFFFFF;
+        font-family: Novecento Sans Web,sans-serif;
+        text-transform: uppercase;
+        padding: .75rem 1.5rem;
+    }
+    
+}

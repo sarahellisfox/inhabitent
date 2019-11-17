@@ -109,7 +109,7 @@ button {
 	text-transform: uppercase;
 }
 
-.home, .blog, .archive, .page-id-58 {
+.home, .blog, .archive {
 	
 	.entry-title {
 	display:none;
@@ -233,6 +233,7 @@ button {
 		font-size: 3em;
 		color: #FFFFFF;
 	}
+
 	h2 {
 		text-align: center;
 		font-size: 2em;
@@ -243,5 +244,22 @@ button {
 		margin-left: auto; 
 		margin-right: auto;
 		
+	}	
+}
+
+/* Find Us Page */ 
+.page-id-58 {
+
+	.site-main {
+
+		h1 {
+			text-align: left;
+		}
+
+		h2 {
+			font-weight: bold; 
+			font-size: 2em;
+		}
 	}
+
 }

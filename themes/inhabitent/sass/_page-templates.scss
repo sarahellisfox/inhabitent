@@ -2,6 +2,24 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
+// Banner for Front Page & About Page 
+
+.home {
+	.banner-wrapper {
+		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+					#969696 url(../../images/home-hero.jpg) no-repeat top; 
+					background-size: cover;
+	}
+}
+
+.page-template-page-about {
+	.banner-wrapper {
+		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+					#969696 url(../../images/about-hero.jpg) no-repeat bottom; 
+					background-size: cover;
+	}
+}
 /* Front Page */
 
 // Product Section - Front Page
@@ -232,20 +250,30 @@
 	}
 }
 
-// Banner for Front Page & About Page 
+/* Find Us Page */ 
 
-.home {
-	.banner-wrapper {
-		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
-					#969696 url(../../images/home-hero.jpg) no-repeat top; 
-					background-size: cover;
-	}
+.page-id-58  {
+	width: 100%; 
+
+		.content-area {
+			width: 1120px;
+			display: flex; 
+			flex-direction: row;
+			margin-left: auto; 
+			margin-right: auto; 
+
+			.site-main {
+				width: 70%; 
+				border-right: 1px solid #e1e1e1;
+			}
+
+			.widget-area {
+				width: 30%; 
+				padding-left: 2em;
+			}
+		}
 }
 
-.page-template-page-about {
-	.banner-wrapper {
-		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
-					#969696 url(../../images/about-hero.jpg) no-repeat bottom; 
-					background-size: cover;
-	}
+.post-58 {
+	padding: 0 2.5em;
 }
