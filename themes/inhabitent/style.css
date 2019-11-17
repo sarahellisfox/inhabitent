@@ -437,6 +437,15 @@ button {
   font-size: 3em;
   color: #FFFFFF; }
 
+.page-template-page-about h2 {
+  text-align: center;
+  font-size: 2em; }
+
+.page-template-page-about .entry-content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
