@@ -10,7 +10,10 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'shop' ); ?>
+			<a href="<?php echo get_post_permalink(); ?>">
+    		<?php the_post_thumbnail('shop'); ?>
+
+    </a>
 		<?php endif; ?>
 
 		<div class="product-price-info">
