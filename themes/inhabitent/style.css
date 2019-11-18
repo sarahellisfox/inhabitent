@@ -553,12 +553,12 @@ button {
 .home .header-logo, .page-template-page-about .header-logo {
   background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
 
-.archive .nav-wrapper, .blog .nav-wrapper, .page-id-58 .nav-wrapper {
+.archive .nav-wrapper, .blog .nav-wrapper, .page-id-58 .nav-wrapper, .single .nav-wrapper {
   border-bottom: 1px solid #e1e1e1; }
-  .archive .nav-wrapper a, .blog .nav-wrapper a, .page-id-58 .nav-wrapper a {
+  .archive .nav-wrapper a, .blog .nav-wrapper a, .page-id-58 .nav-wrapper a, .single .nav-wrapper a {
     color: #248a83;
     text-shadow: none; }
-  .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo {
+  .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo, .single .nav-wrapper .header-logo {
     background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
 
 .home .circle-logo {
@@ -836,10 +836,10 @@ button {
   .widget_custom_html a span {
     padding-left: 1.5em; }
 
-.blog .entry-header {
+.blog .entry-header, .single .entry-header {
   position: relative;
   width: 96%; }
-  .blog .entry-header .entry-title {
+  .blog .entry-header .entry-title, .single .entry-header .entry-title {
     position: absolute;
     top: 0;
     left: 0;
@@ -847,8 +847,9 @@ button {
     margin-top: 1em;
     text-align: left;
     max-width: 70%;
-    background: #248a83; }
-  .blog .entry-header .entry-meta {
+    background: #248a83;
+    color: white; }
+  .blog .entry-header .entry-meta, .single .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 7px;
@@ -857,13 +858,27 @@ button {
     text-decoration: none;
     padding: 0.3em;
     font-weight: bold; }
-  .blog .entry-header a {
+  .blog .entry-header a, .single .entry-header a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold; }
 
-.blog p {
+.blog p, .single p {
   margin-bottom: 2em; }
+
+/* Journal Single Page */
+.single .site-content {
+  width: 100%;
+  text-align: center; }
+  .single .site-content .site-main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
 
 /* About Page */
 .page-template-page-about .entry-title {
