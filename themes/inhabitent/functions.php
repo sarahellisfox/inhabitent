@@ -130,4 +130,5 @@ function tt_hidetitle_class($classes) {
 	add_theme_support( 'post-thumbnails' ); 
 	add_image_size( 'feature-post size', 352, 450);
 	add_image_size( 'banner size', 4000, 2667 ); 
+	add_image_size( 'shop', 250, 250 ); 
 

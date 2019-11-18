@@ -154,31 +154,77 @@
 .site-main {
     width: 1120px; 
     margin-right: auto; 
-    margin-left: auto;
+	margin-left: auto;
+	
 }
 
-.shop-catagory-wrapper {
-    display: flex; 
-    justify-content: center;
-    width: 1120px; 
-    margin-right: auto; 
-    margin-left: auto;
-    margin-bottom: $base__space-unit;
+.post-type-archive-product {
 
-    .shop-product-type {
-        display: inline;
-        padding: 0 1em;
-        font-size: 1.2rem;
-    }
+	.site-content {
+		display: flex; 
+		flex-direction: column;
+		width: 1120px; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
+	h2 {
+		text-align: center; 
+		margin-top: 1em;
+		color: #000000;
+		font-weight: bold; 
+		font-size: 2em; 
+	}
+
+	h3 {
+		font-weight: bold; 
+		font-size: 2em; 
+	}
+
+	.product-block-wrapper {
+		display: flex; 
+		flex-direction: row;
+		justify-content: center;
+		line-height: 0;
+
+			.product-btn {
+				background-color: #ffffff;
+				color: $color_site_green; 
+				text-decoration: none;
+			}
+	}
+
 }
 
 .shop-products-grid {
-    width: 1120px;
+	width: 1120px;
+	margin-left: auto; 
+	margin-right: auto;
+	border-top: 1px dashed #c8c8c8;
+	padding-top: 3em;
+	margin-top: 2em;;
     display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+	grid-template-columns: repeat(4, 1fr);	
+	grid-template-rows: repeat(4, 1fr);
+	margin-bottom: 3em;
 }
+
+.type-product {
+	border: 1px solid #c8c8c8;
+	width: 250px; 
+	height: 230px;
+}
+
+.attachment-shop {
+	max-width: 250px; 
+	max-height: 167px;
+}
+
+.product-price-info {
+	text-align: center;
+}
+
 
 /* Journal Page */
 
@@ -284,15 +330,6 @@
 				width: 100%; 
 				display: flex; 
 				flex-direction: row-reverse;
-
-				.widget-area {
-				
-		
-					.type-post {
-					
-					}
-			}
-			
 		}
 	}
 }

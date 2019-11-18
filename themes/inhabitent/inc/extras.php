@@ -38,9 +38,13 @@ function my_custom_login_url($url)
     return home_url();
 }
 
+// Sets number of boxes in shop grid
 
-
- 
-// Change default logo to Inhabitent's Logo 
-
-// Update the URL that the logo points to be the site's homepage URL (instead of wordpress.org).
+function change_product_posts_number($query) {
+    if ( $query->is_main_query() ) {
+      if( is_post_type_archive('product') ) {
+        $query->set( 'posts_per_page', 16 );
+      }
+    }
+}
+add_action( 'pre_get_posts', 'change_product_posts_number' );
