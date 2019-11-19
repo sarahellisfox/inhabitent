@@ -120,7 +120,6 @@
 			display: inline-block;
 			text-align: left;		
 			height: 50px; 
-			width: 1120px;
 		}
 }
 
@@ -288,6 +287,49 @@
 		}
 }
 
+// Single Product Page 
+
+.single-product {
+	
+	.site-main {
+		width: 1120px; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
+	.entry {
+		display: flex;
+		flex-direction: row; 
+		width: 1120px; 
+		height: 100%; 
+		padding-top: 3em;
+	}
+
+	.entry-title {
+		color: #d99054;
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.single-product-text {
+		padding-left: 3em; 
+	}
+
+	.type-product {
+		width: 1120px; 
+		height: auto;
+		border: 0;
+		margin-bottom: 3em;
+	}
+
+	.product-price {
+		font-size: 1.8rem; 
+		font-family: Novecento Sans Web,sans-serif; 
+	}
+}
+
+
 /* Journal Page */
 
 .journal-section-wrapper {
@@ -341,7 +383,7 @@
 }
 
 // Title on Blog Posts 
-.blog, .single {
+.blog, .single-post {
 
 	.entry-header{
 		position: relative;
@@ -383,7 +425,7 @@
 
 /* Journal Single Page */ 
 
-.single {
+.single-post {
 	.site-content {
 		width: 100%; 
 		text-align: center;

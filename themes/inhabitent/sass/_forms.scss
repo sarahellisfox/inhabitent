@@ -4,7 +4,7 @@
 
 /* Buttons */
 
-.readmore-button { 
+.readmore-button{ 
     background-color: Transparent;
     font-family: Novecento Sans Web,sans-serif;
     text-decoration: none;
@@ -56,3 +56,15 @@
     }
     
 }
+
+.social-btn { 
+    border: 1px solid #000;
+    color: #000;
+    background-color: Transparent;
+    font-family: Novecento Sans Web,sans-serif;
+    text-decoration: none;
+    background-repeat:no-repeat;
+    padding: 0.75em 1.25em;
+    text-transform: uppercase;
+    overflow: hidden;
+} 

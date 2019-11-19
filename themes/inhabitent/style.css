@@ -499,6 +499,17 @@ button {
     text-transform: uppercase;
     padding: 0.75em 1.5em; }
 
+.social-btn {
+  border: 1px solid #000;
+  color: #000;
+  background-color: Transparent;
+  font-family: Novecento Sans Web,sans-serif;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  padding: 0.75em 1.25em;
+  text-transform: uppercase;
+  overflow: hidden; }
+
 .masthead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,8 +754,7 @@ button {
   list-style: none;
   display: inline-block;
   text-align: left;
-  height: 50px;
-  width: 1120px; }
+  height: 50px; }
 
 .latest-adventures-block-wrapper {
   display: grid;
@@ -878,6 +888,42 @@ button {
   margin-bottom: 3em;
   border-top: 1px dashed #c8c8c8; }
 
+.single-product .site-main {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.single-product .entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1120px;
+  height: 100%;
+  padding-top: 3em; }
+
+.single-product .entry-title {
+  color: #d99054;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0; }
+
+.single-product .single-product-text {
+  padding-left: 3em; }
+
+.single-product .type-product {
+  width: 1120px;
+  height: auto;
+  border: 0;
+  margin-bottom: 3em; }
+
+.single-product .product-price {
+  font-size: 1.8rem;
+  font-family: Novecento Sans Web,sans-serif; }
+
 /* Journal Page */
 .journal-section-wrapper {
   width: 1120px;
@@ -923,10 +969,10 @@ button {
   .widget_custom_html a span {
     padding-left: 1.5em; }
 
-.blog .entry-header, .single .entry-header {
+.blog .entry-header, .single-post .entry-header {
   position: relative;
   width: 96%; }
-  .blog .entry-header .entry-title, .single .entry-header .entry-title {
+  .blog .entry-header .entry-title, .single-post .entry-header .entry-title {
     position: absolute;
     top: 0;
     left: 0;
@@ -936,7 +982,7 @@ button {
     max-width: 70%;
     background: #248a83;
     color: white; }
-  .blog .entry-header .entry-meta, .single .entry-header .entry-meta {
+  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 7px;
@@ -945,19 +991,19 @@ button {
     text-decoration: none;
     padding: 0.3em;
     font-weight: bold; }
-  .blog .entry-header a, .single .entry-header a {
+  .blog .entry-header a, .single-post .entry-header a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold; }
 
-.blog p, .single p {
+.blog p, .single-post p {
   margin-bottom: 2em; }
 
 /* Journal Single Page */
-.single .site-content {
+.single-post .site-content {
   width: 100%;
   text-align: center; }
-  .single .site-content .site-main {
+  .single-post .site-content .site-main {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -8,29 +8,22 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="entry">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'product' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<div class="single-product-text">
+			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+			<p class="product-price">$<?php the_field( 'price' ); ?></p>
+			<?php the_content(); ?></p>
 
-		<div class="entry-meta single-journal">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<div class="social-media-btn">
+				<button class="social-btn"><i class="fab fa-facebook-f"></i> Like</button>
+				<button class="social-btn"><i class="fab fa-twitter"></i> Tweet</button>
+				<button class="social-btn"><i class="fab fa-pinterest"></i> Pin</button>
+			</div>
+		</div> 
+	</div> 
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
