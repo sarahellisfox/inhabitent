@@ -39,7 +39,7 @@
                         <div class="featured-text-wrapper"> 
                         <p class="featured-date"><?php the_date('j F, Y');?>  / <?php comments_number('0 comments ', '1 comment', '% comments'); ?> </p>
                         <p class="featured-title"><?php the_title(); ?></p> 
-                        <button class="featured-btn"><?php get_permalink(); ?>Read Entry</button>
+                        <a href=" <?php the_permalink(); ?>"><button class="featured-btn">Read Entry</button></a>
                         </div>
                     </div>
             <?php endforeach; ?>
@@ -63,7 +63,7 @@
                             <div class="text-btn-wrap"> 
                                 <h3 class="adventure-text"><?php the_title(); ?></h3>
                                 <a href="<?php the_permalink(); ?>"><button class="readmore-button">Read More</button></a>
-                            </div> 
+                            </div>
                         </div>
         
                 <?php 
@@ -74,7 +74,7 @@
 <?php
             endif;?>
             <div class="adventure-btn-wrapper">
-                        <button class="adventures-btn">More Adventures</button>
+            <button class="adventures-btn">More Adventures</button>
                     </div> 
             </div> 
  
