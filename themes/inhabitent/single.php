@@ -33,6 +33,15 @@ get_header(); ?>
                     
                     <div class="journal-single-post">
                         <?php get_template_part('template-parts/content', 'blog'); ?>
+
+                        <div class="social-media-btn">
+                            <button class="social-btn"><i class="fab fa-facebook-f"></i> Like</button>
+                            <button class="social-btn"><i class="fab fa-twitter"></i> Tweet</button>
+                            <button class="social-btn"><i class="fab fa-pinterest"></i> Pin</button>
+                        </div>
+
+                    
+                    
                     </div> 
 
                     <?php endwhile; ?>

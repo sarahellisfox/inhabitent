@@ -170,6 +170,38 @@
 
 }
 
+// Single Adventures 
+
+.single-adventures {
+
+	.site-main {
+		width: 100%;
+		height: auto; 
+	}
+	
+	.entry-content {
+		width: 1120px;
+		margin-left: auto; 
+		margin-right: auto;
+		text-align: center;
+
+	
+		img {
+			margin-top: 2em;
+			border: 1px solid #c8c8c8;
+		}
+
+	a {
+		text-decoration: none;
+	}
+
+	.social-media-btn {
+		margin: 3em 0;
+	}
+
+	}
+} 
+
 /* Shop Page */ 
 
 .site-main {
@@ -435,6 +467,10 @@
 				display: flex; 
 				flex-direction: row-reverse;
 		}
+
+		.social-media-btn {
+			text-align: left;
+		}
 	}
 }
 
@@ -481,3 +517,8 @@
 .post-58 {
 	padding: 0 2.5em 3em 2.5em;
 }
+
+.widget_archive {
+	white-space: normal;
+}
+

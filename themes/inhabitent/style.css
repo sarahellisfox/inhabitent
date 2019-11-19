@@ -786,6 +786,23 @@ button {
   margin-right: auto;
   text-align: left; }
 
+.single-adventures .site-main {
+  width: 100%;
+  height: auto; }
+
+.single-adventures .entry-content {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .single-adventures .entry-content img {
+    margin-top: 2em;
+    border: 1px solid #c8c8c8; }
+  .single-adventures .entry-content a {
+    text-decoration: none; }
+  .single-adventures .entry-content .social-media-btn {
+    margin: 3em 0; }
+
 /* Shop Page */
 .site-main {
   width: 1120px;
@@ -1012,6 +1029,8 @@ button {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
+  .single-post .site-content .social-media-btn {
+    text-align: left; }
 
 /* About Page */
 .page-template-page-about .entry-title {
@@ -1046,6 +1065,9 @@ button {
 
 .post-58 {
   padding: 0 2.5em 3em 2.5em; }
+
+.widget_archive {
+  white-space: normal; }
 
 body {
   width: 100%;

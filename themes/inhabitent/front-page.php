@@ -74,8 +74,8 @@
 <?php
             endif;?>
             <div class="adventure-btn-wrapper">
-            <button class="adventures-btn">More Adventures</button>
-                    </div> 
+                <a href="adventu<button class="adventures-btn">More Adventures</button>
+            </div> 
             </div> 
  
         </section> 
