@@ -1,21 +1,22 @@
-# RED Starter
-
-A WordPress starter theme for RED Academy students, forked from Underscores.
-
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+#Inhabitent Wordpress Theme
+ 
+Wordpress theme for retail company specializing in outdoors goods. Features blog and adventures section, for special posts.
+ 
+The Inhabintent Wordpress Theme used Wordpress as a CMS, and also used PHP, CSS and HTML.
+ 
+##Screenshots
+![alt text](themes/inhabitent-theme/inhabitent-home.png)
+ 
+![alt text](themes/inhabitent-theme/inhabitent-journal.png)
+ 
+![alt text](themes/inhabitent-theme/inhabitent-shop.png)
+ 
+##Custom Widget
+Allows customers to access the hours and contact information easily, and site administrators to update it if necessary.
+ 
+![alt text](themes/inhabitent-theme/inhabitent-shop.png)
+ 
+###Notes on Project
+This was a huge project! If I had a graph to show how I worked on this website it would show me being extremely careful and organized at the beginning, and utterly chaotic at the end. Still, I'm happy with how it turned out -- even though it took me a long time to understand body class, and why it's so awesome!
+ 
+This project really gave me a lot of different changes to work with PHP, and I really enjoyed creating the entire front page drawing from PHP generated links and information.
