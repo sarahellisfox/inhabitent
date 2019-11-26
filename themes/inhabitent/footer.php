@@ -4,7 +4,7 @@
 
 	</div><!-- site-content -->
 
-	<footer id="site-footer" class="site-footer" role="contentinfo">
+	<footer id="site-footer" class="site-footer">
 		
 		<div class="div-content-wrapper">	
 			<div class="div-contact">

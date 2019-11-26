@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main">
 
         <section class="product-section-container">
             <h2 class="front-page-title">Shop Stuff</h2>
@@ -59,12 +59,12 @@
                 ?>
                 <?php if ( $adventures->have_posts() ) : ?>    
                     <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-                        <div class="adventure-block" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' <?php the_post_thumbnail_url(); ?> ') no-repeat top; background-size: cover, cover;)">
+                        <article class="adventure-block" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), #969696 url(' <?php the_post_thumbnail_url(); ?> ') no-repeat top; background-size: cover, cover;)">
                             <div class="text-btn-wrap"> 
                                 <h3 class="adventure-text"><?php the_title(); ?></h3>
                                 <a href="<?php the_permalink(); ?>"><button class="readmore-button">Read More</button></a>
                             </div>
-                        </div>
+                        </article>
         
                 <?php 
                 
@@ -74,7 +74,7 @@
 <?php
             endif;?>
             <div class="adventure-btn-wrapper">
-                <a href="adventu<button class="adventures-btn">More Adventures</button>
+                <button class="adventures-btn">More Adventures</button>
             </div> 
             </div> 
  

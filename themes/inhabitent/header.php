@@ -13,11 +13,11 @@
 
 <body <?php body_class(); ?>>
 
-	<header id="masthead" class="masthead" role="banner">
+	<header id="masthead" class="masthead">
 		
 		<div class="nav-wrapper">
 
-			<nav id="primary_menu" class="menu"" role="navigation">
+			<nav id="primary_menu" class="menu">
 
 			<a class="header-logo" href="<?php echo SITELINK; ?>"></a>
 
