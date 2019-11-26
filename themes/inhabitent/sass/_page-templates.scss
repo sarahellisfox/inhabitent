@@ -599,6 +599,40 @@ body {
 	border: none;
 }
 
+/* 404 */ 
+
+.error404 {
+
+.content-area {
+	display: flex; 
+	width: 1120px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.widgettitle {
+font-family: Novecento Sans Web,sans-serif;
+letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.5em; 
+color: #2f1339;
+}
+
+ul {
+	list-style: none;
+
+		a {
+			text-decoration: none;
+			color: $color_site_green;
+		}
+}
+
+.site-footer {
+	margin-top: 2em;
+}
+
+}
 
 
 

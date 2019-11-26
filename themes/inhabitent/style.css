@@ -572,12 +572,12 @@ button {
 .home .header-logo, .page-template-page-about .header-logo {
   background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
 
-.archive .nav-wrapper, .blog .nav-wrapper, .page-id-58 .nav-wrapper, .single .nav-wrapper {
+.archive .nav-wrapper, .blog .nav-wrapper, .page-id-58 .nav-wrapper, .single .nav-wrapper, .error404 .nav-wrapper {
   border-bottom: 1px solid #e1e1e1; }
-  .archive .nav-wrapper a, .blog .nav-wrapper a, .page-id-58 .nav-wrapper a, .single .nav-wrapper a {
+  .archive .nav-wrapper a, .blog .nav-wrapper a, .page-id-58 .nav-wrapper a, .single .nav-wrapper a, .error404 .nav-wrapper a {
     color: #248a83;
     text-shadow: none; }
-  .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo, .single .nav-wrapper .header-logo {
+  .archive .nav-wrapper .header-logo, .blog .nav-wrapper .header-logo, .page-id-58 .nav-wrapper .header-logo, .single .nav-wrapper .header-logo, .error404 .nav-wrapper .header-logo {
     background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
 
 .home .circle-logo {
@@ -1140,3 +1140,29 @@ body {
 .search-form .search-submit {
   background-color: inherit;
   border: none; }
+
+/* 404 */
+.error404 .content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.error404 .widgettitle {
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #2f1339; }
+
+.error404 ul {
+  list-style: none; }
+  .error404 ul a {
+    text-decoration: none;
+    color: #248a83; }
+
+.error404 .site-footer {
+  margin-top: 2em; }
