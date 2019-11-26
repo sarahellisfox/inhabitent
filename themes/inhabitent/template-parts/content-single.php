@@ -20,7 +20,15 @@
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<p class="price">$<?php the_field( 'price' ); ?></p>
 			<?php the_content(); ?>
+
+			<div class="social-media-btn">
+				<button class="social-btn"><i class="fab fa-facebook-f"></i> Like</button>
+				<button class="social-btn"><i class="fab fa-twitter"></i> Tweet</button>
+				<button class="social-btn"><i class="fab fa-pinterest"></i> Pin</button>
+			</div>
 		</header><!-- .entry-header -->
+
+		
 
 		<?php
 			wp_link_pages( array(
