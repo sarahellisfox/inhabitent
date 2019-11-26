@@ -322,6 +322,7 @@
 // Single Product Page 
 
 .single-product {
+
 	
 	.site-main {
 		width: 1120px; 
@@ -329,9 +330,10 @@
 		margin-right: auto;
 	}
 
-	.entry {
+	.entry-content {
 		display: flex;
 		flex-direction: row; 
+		justify-content: space-between;
 		width: 1120px; 
 		height: 100%; 
 		padding-top: 3em;
@@ -342,6 +344,10 @@
 		font-size: 2.4rem;
 		font-weight: bold;
 		margin: 0;
+	}
+
+	.entry-header {
+		width: 50%; 
 	}
 
 	.single-product-text {
@@ -355,10 +361,16 @@
 		margin-bottom: 3em;
 	}
 
-	.product-price {
+	.price {
 		font-size: 1.8rem; 
 		font-family: Novecento Sans Web,sans-serif; 
+		margin: 0;
 	}
+
+	h1 {
+		text-align: left;
+	}
+
 }
 
 
@@ -521,4 +533,75 @@
 .widget_archive {
 	white-space: normal;
 }
+
+// HEADER 
+
+body {
+	width: 100%; 
+	height: auto;
+}
+
+// FOOTER 
+
+.site-footer {
+	display: block;
+	bottom: 0;
+	background-image: url("../../images/dark-wood@2x.png");
+	width: 100%;
+	height: auto;
+
+	.div-content-wrapper {
+		width: 1120px;
+		margin-left: auto; 
+		margin-right: auto;
+		display: flex; 
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: #FFFFFF;
+		font-size: 1em;
+		padding: 3em 0;
+
+		.div-contact {
+			width: 25%; 
+		}
+
+		.div-hours {
+			width: 25%; 
+		}
+
+		.footer-logo {
+			width: 50%;
+			text-align: right;
+			padding-top: 1.5em;
+
+			embed {
+				width: 250px;
+			}
+		}
+
+		.fab {
+		padding: 0 .20em;
+		}
+
+		.footer-copyright {
+			flex: 0 1 100%;
+			text-align: center;
+			padding-top: 2em;
+			font-weight: lighter;
+			font-size: 0.9em;
+		}
+	}
+
+}
+
+.search-form .search-submit {
+	background-color: inherit;
+	border: none;
+}
+
+
+
+
+
 

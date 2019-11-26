@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="content-main">
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 
 			<?php if (have_posts()) : ?>
 
@@ -22,7 +22,7 @@ get_header(); ?>
             <section class="journal-section-wrapper">
 
 
-            <div id="secondary" class="widget-area" role="complementary">
+            <div id="secondary" class="widget-area">
                 <?php get_sidebar(); ?>
             </div> 
 

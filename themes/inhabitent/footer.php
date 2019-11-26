@@ -30,7 +30,7 @@
 			</div> 
 			
 			<div class="footer-copyright">
-				<p>COPYRIGHT © 2019 INHABITENT</p>	
+				<p>Copyright © 2019 Inhabitent</p>	
 			</div>
 		</div>
 

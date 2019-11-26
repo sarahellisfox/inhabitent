@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Custom Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author URI: www.github.com/sarahellisfox
+Description: A WordPress starter theme customized by Sarah Fox.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,90 +63,3 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-
-// HEADER 
-
-body {
-	width: 100%; 
-	height: auto;
-}
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-
-
-/* Links */
-
-// Banner Content
-
-.product-btn {
-	background: $color_site_green;
-	padding: .5em 1em;
-}
-
-
-// FOOTER 
-
-.site-footer {
-	display: block;
-	bottom: 0;
-	background-image: url("../../images/dark-wood@2x.png");
-	width: 100%;
-	height: auto;
-
-	.div-content-wrapper {
-		width: 1120px;
-		margin-left: auto; 
-		margin-right: auto;
-		display: flex; 
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		color: #FFFFFF;
-		font-size: 1em;
-		padding: 3em 0;
-
-		.div-contact {
-			width: 25%; 
-		}
-
-		.div-hours {
-			width: 25%; 
-		}
-
-		.footer-logo {
-			width: 50%;
-			text-align: right;
-			padding-top: 1.5em;
-
-			embed {
-				width: 250px;
-			}
-		}
-
-		.fab {
-		padding: 0 .20em;
-		}
-
-		.footer-copyright {
-			flex: 0 1 100%;
-			text-align: center;
-			padding-top: 2em;
-			font-weight: lighter;
-			font-size: 0.9em;
-		}
-	}
-
-}
-
-.search-form .search-submit {
-	background-color: inherit;
-	border: none;
-}
-
-
-
-
-
-

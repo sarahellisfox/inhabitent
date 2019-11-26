@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+<form method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 		<i class="fa fa-search" aria-hidden="true"></i>
 </form>
 

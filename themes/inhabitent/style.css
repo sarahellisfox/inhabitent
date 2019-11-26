@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Custom Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author URI: www.github.com/sarahellisfox
+Description: A WordPress starter theme customized by Sarah Fox.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -453,6 +453,9 @@ button {
 .required {
   color: #d99054; }
 
+.footer-copyright {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -545,6 +548,11 @@ button {
     .menu ul a {
       color: white;
       text-decoration: none; }
+
+/* Links */
+.product-btn, .adventures-btn {
+  background: #248a83;
+  padding: .5em 1em; }
 
 .screen-reader {
   position: absolute;
@@ -910,7 +918,7 @@ button {
   margin-left: auto;
   margin-right: auto; }
 
-.single-product .entry {
+.single-product .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,6 +926,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1120px;
   height: 100%;
   padding-top: 3em; }
@@ -928,6 +939,9 @@ button {
   font-weight: bold;
   margin: 0; }
 
+.single-product .entry-header {
+  width: 50%; }
+
 .single-product .single-product-text {
   padding-left: 3em; }
 
@@ -937,9 +951,13 @@ button {
   border: 0;
   margin-bottom: 3em; }
 
-.single-product .product-price {
+.single-product .price {
   font-size: 1.8rem;
-  font-family: Novecento Sans Web,sans-serif; }
+  font-family: Novecento Sans Web,sans-serif;
+  margin: 0; }
+
+.single-product h1 {
+  text-align: left; }
 
 /* Journal Page */
 .journal-section-wrapper {
@@ -1072,14 +1090,6 @@ button {
 body {
   width: 100%;
   height: auto; }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-.product-btn, .adventures-btn {
-  background: #248a83;
-  padding: .5em 1em; }
 
 .site-footer {
   display: block;
