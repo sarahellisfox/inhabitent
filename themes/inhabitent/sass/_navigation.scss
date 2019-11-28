@@ -119,13 +119,22 @@
 .search-form {
 	padding-top: 10px;
 	padding-left: 25px;
-}
-
-.searchField {
-	display: none; 
-	width: 0;
 	transition: all 5s ease-in; 
 }
+
+.searchfield {
+	display: none; 
+	width: 0;
+	background-color: transparent;
+	border: none;
+	color: navajowhite;
+
+	&::placeholder {
+		color: navajowhite;
+		padding-left: 5px;
+	}
+}
+
 
 .show {
 	display: inline-block;
