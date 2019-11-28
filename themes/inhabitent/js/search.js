@@ -2,10 +2,10 @@
 
     $(function () {
 
-        const searchForm = $("#searchForm"); 
+        const searchSubmit = $("#searchSubmit"); 
         const searchField = $("#searchField"); 
 
-        $(searchForm).on('click', function(event) {
+        $(searchSubmit).one('click', function(event) {
             event.preventDefault();
 
             $(searchField).addClass( "show" );

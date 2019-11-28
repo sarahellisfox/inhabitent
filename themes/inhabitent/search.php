@@ -23,7 +23,6 @@ get_header(); ?>
 
 					<?php get_template_part('template-parts/content', 'search'); ?>
 
-
 				<?php endwhile; ?>
 
 				<?php red_starter_numbered_pagination(); ?>
@@ -33,6 +32,8 @@ get_header(); ?>
 				<?php get_template_part('template-parts/content', 'none'); ?>
 
 			<?php endif; ?>
+
+			<a class ="readmore-button" href="<?php echo get_permalink();?>">Read more →</a>
 		</main><!-- #main -->
 		<div class="side-bar">
 			<?php get_sidebar(); ?></div>

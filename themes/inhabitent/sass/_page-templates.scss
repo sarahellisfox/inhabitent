@@ -503,7 +503,7 @@
 
 /* Find Us Page */ 
 
-.page-id-58  {
+.page-id-58, .search-page {
 	width: 100%; 
 
 		.content-area {
@@ -634,6 +634,50 @@ ul {
 
 }
 
+
+.search-page {
+		display: flex; 
+		flex-direction: row;
+		width: 1120px;
+		margin: 0 auto;
+
+		.site-main {
+		border-right: 1px solid #e1e1e1;
+		width: 75%;
+
+			p {
+				width: 80%; 
+				padding-bottom: 25px;
+			}
+		}
+
+		.widget-area {
+			padding-left: 25px;
+		}
+
+		h1 {
+			border-bottom: 1px solid #e1e1e1;
+		}
+
+		.entry-title {
+			text-align: left; 
+			font-weight: bold;
+			text-align: left;
+
+			a {
+				color: $color_site_green; 
+				text-decoration: none;
+			}	
+		}
+	.entry-meta {
+		text-transform: uppercase;
+	}
+
+	.readmore-button {
+		color: $color__text-main; 
+		border: 1px solid $color__text-main;
+		}	
+}
 
 
 
