@@ -525,10 +525,6 @@
 		}
 }
 
-.post-58 {
-	padding: 0 2.5em 3em 2.5em;
-}
-
 .widget_archive {
 	white-space: normal;
 }
@@ -644,13 +640,13 @@ ul {
 		.site-main {
 		border-right: 1px solid #e1e1e1;
 		width: 75%;
-		display: flex; 
+		display: flex;
 		flex-direction: column;
+		margin-bottom: 50px;
 
-			p {
-				width: 80%; 
-				padding-bottom: 25px;
-			}
+		.hentry {
+			margin-left: 0; 
+			padding-left: 0;
 		}
 
 		.widget-area {
@@ -659,6 +655,7 @@ ul {
 
 		h1 {
 			border-bottom: 1px solid #e1e1e1;
+			width: 75%; 
 		}
 
 		.entry-title {
@@ -678,13 +675,14 @@ ul {
 	.readmore-button {
 		color: $color__text-main; 
 		border: 1px solid $color__text-main;
-		padding-bottom: 25px;
+		margin-bottom: 25px;
+		width: 125px;
 		}	
 
 	.product {
 		width: 75%;
 		border: none;
-		margin-bottom: 25px;
 	
 	}
+}
 }

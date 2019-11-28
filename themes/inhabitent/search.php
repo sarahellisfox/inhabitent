@@ -33,7 +33,6 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<a class ="readmore-button" href="<?php echo get_permalink();?>">Read more →</a>
 		</main><!-- #main -->
 		<div class="side-bar">
 			<?php get_sidebar(); ?></div>
