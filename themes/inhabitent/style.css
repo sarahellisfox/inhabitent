@@ -518,11 +518,16 @@ button {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  margin-bottom: 3.2em; }
+  margin-bottom: 3.2em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
   .masthead .nav-wrapper {
     width: 100%;
     height: 50px;
-    position: absolute; }
+    position: absolute;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .banner-wrapper {
   width: 100%;
@@ -590,6 +595,37 @@ button {
           transform: translateX(-50%);
   left: 50%;
   top: 35%; }
+
+/* Search Bar */
+.search-form {
+  padding-top: 10px;
+  padding-left: 25px; }
+
+.searchField {
+  display: none;
+  width: 0;
+  -webkit-transition: all 5s ease-in;
+  transition: all 5s ease-in; }
+
+.show {
+  display: inline-block;
+  width: 100px; }
+
+.fa-search {
+  color: white;
+  font-size: 1.25em; }
+
+fieldset {
+  border: none; }
+
+.nav-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 /*--------------------------------------------------------------
 # Accessibility

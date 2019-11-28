@@ -19,9 +19,12 @@
 
 			<nav id="primary_menu" class="menu">
 
-			<a class="header-logo" href="<?php echo SITELINK; ?>"></a>
+			<a class="header-logo" href="<?php echo home_url(); ?>"></a>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<div class="nav-search">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> 
+						<?php get_search_form(); ?>
+				</div>
 
 			</nav> 
 

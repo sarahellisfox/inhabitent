@@ -1,11 +1,27 @@
-<form method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-		<i class="fa fa-search" aria-hidden="true"></i>
+<!-- <form role="search" method="get" class="search-form" id="searchForm">
+	<fieldset> 
+		<button class="search-submit" id="searchSubmit" >
+			<i class="fa fa-search"></i>
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</button>
+		<label>
+			<input type="search" class="searchField" id="searchField" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+	</fieldset>
+</form> -->
+
+
+<form role="search" method="get" class="search-form" id="searchForm">
+<fieldset> 
+		<button class="search-submit" id="searchSubmit">
+			<i class="fa fa-search"></i>
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</button>
+		<label>
+			<input type="search" class="searchField" id="searchField" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+	</fieldset>
 </form>
 
-<!-- <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ?>">
-	<label>
-		<span class="screen-reader-text"><?php _x( 'Search for:', 'label' )?></span>
-		<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" />
-	</label>
-	<button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form> -->
+
+
