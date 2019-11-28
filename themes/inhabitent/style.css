@@ -524,10 +524,7 @@ button {
   .masthead .nav-wrapper {
     width: 100%;
     height: 50px;
-    position: absolute;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    position: absolute; }
 
 .banner-wrapper {
   width: 100%;
@@ -1258,3 +1255,5 @@ body {
     .search-page .site-main .product {
       width: 75%;
       border: none; }
+  .search-page .search-pagination {
+    margin-top: 25px; }
