@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "A starter theme for the Inhabitent site - project 4 at Red Academy",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0"
   },
   "devDependencies": {
